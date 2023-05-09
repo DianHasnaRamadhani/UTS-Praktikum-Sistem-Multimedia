@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body{
+            background: linear-gradient(to right, orange, #ec38bc, #7303c0, cyan);  
+        }
+        h1{
+            font-size: 70px;
+            text-align: center;
+            margin: 100px auto;
+            width: 600px;
+            padding: 10px;
+        }
+        .form {
+        margin: 50px auto;
+        width: 400px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: lightblue;
+        border-radius: 5px;
+    }
+    input[type=file] {
+        font-size: 15px;
+        font-family: monospace;
+        margin: 5px auto;
+        width: 100%;
+        padding: 10px;
+    }
+    input[type=submit] {
+        margin: 5px auto;
+        font-family: monospace;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        float: right;
+        padding: 5px;
+        width: 80px;
+        border: 1px solid #0000;
+        color: #7303c0;
+        background: pink;
+        cursor: pointer;
+    }
+    </style>
+    <title>I To S</title>
+</head>
+<body>
+    <h1>Image To Sketch</h1>
+    <div class="form">
+    <form action="{{url_for('after')}}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file1">
+        <input type="submit" name="btn">
+    </form>
+    </div>
+
+</body>
+</html>
